@@ -20,4 +20,4 @@ EXPOSE 11434
 ENV OLLAMA_HOST=0.0.0.0
 
 # Start Ollama and pull the model
-CMD ["sh", "-c", "ollama serve & sleep 10 && ollama pull phi4 && exec ollama serve"] 
+CMD ["sh", "-c", "ollama serve & sleep 10 && ollama pull llama3.2 && exec ollama serve"] 

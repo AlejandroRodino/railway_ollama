@@ -29,7 +29,7 @@ async def generate_response(request: PromptRequest):
         response = requests.post(
             "http://localhost:11434/api/generate",
             json={
-                "model": "phi4",
+                "model": "llama3.2:latest",
                 "prompt": request.prompt,
                 "stream": False
             }
