@@ -51,4 +51,4 @@ Railway will automatically build and deploy your application.
 
 - The first deployment might take some time as it needs to download the Phi model
 - The API is configured with CORS enabled for all origins
-- Make sure you have enough resources allocated in your Railway project for running the model 
+- Make sure you have enough resources allocated in your Railway project for running the model # railway_ollama
