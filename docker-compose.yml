@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  ollama:
+    build: .
+    ports:
+      - "11434:11434"
+      - "8000:8000"
+    volumes:
+      - ollama_data:/root/.ollama
+    environment:
+      - OLLAMA_HOST=0.0.0.0
+      - PORT=8000
+
+volumes:
+  ollama_data: 
